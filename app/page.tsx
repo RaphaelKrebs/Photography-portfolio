@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-black pt-24 pb-16">
-      <div className="w-full px-6 sm:px-12 md:px-24 lg:px-32 xl:px-48 2xl:px-64">
+      <div className="w-full px-2 sm:px-12 md:px-24 lg:px-32 xl:px-48 2xl:px-64">
         <div className="max-w-[1400px] mx-auto">
           {/* Desktop: 3 columns */}
           <div className="hidden lg:flex gap-6">
@@ -41,9 +41,9 @@ export default function Home() {
           </div>
 
           {/* Mobile: 2 columns */}
-          <div className="lg:hidden flex gap-6">
+          <div className="lg:hidden flex gap-2">
             {[0, 1].map((col) => (
-              <div key={col} className="flex-1 flex flex-col gap-6">
+              <div key={col} className="flex-1 flex flex-col gap-2">
                 {validProjects
                   .filter((_, i) => i % 2 === col)
                   .map((project, idx) => (
