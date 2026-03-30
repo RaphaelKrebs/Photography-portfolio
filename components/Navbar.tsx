@@ -25,7 +25,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed top-4 left-0 right-0 z-50 px-4 md:px-8">
+    <nav className="fixed top-2 md:top-4 left-0 right-0 z-50 px-4 md:px-8">
       <div className="max-w-[1920px] mx-auto bg-white/10 backdrop-blur-lg rounded-full px-4 md:px-8 py-4 flex items-center justify-between shadow-lg">
         {/* Logo - Desktop shows text, Mobile shows RK icon */}
         <Link 
@@ -89,7 +89,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`md:hidden absolute top-20 left-4 right-4 bg-black/80 backdrop-blur-lg rounded-3xl shadow-lg overflow-hidden transition-all duration-300 ${
+        className={`md:hidden absolute top-[4.5rem] left-4 right-4 bg-black/80 backdrop-blur-lg rounded-3xl shadow-lg overflow-hidden transition-all duration-300 ${
           isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
