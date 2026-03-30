@@ -11,7 +11,7 @@ export default function AboutPage() {
             <div className="relative w-full aspect-[3/4] lg:aspect-[3/4]">
               <FadeImage
                 src="/images/About/ABOUT01.webp"
-                alt="Raphael Krebs"
+                alt="Portrait of Raphael Krebs, analog photographer"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -28,7 +28,7 @@ export default function AboutPage() {
               {/* Two-line description - lowercase, minimal */}
               <div className="flex flex-col gap-2 text-base md:text-lg font-light text-foreground/80 leading-relaxed">
                 <p>Analog photographer.</p>
-                <p>No moments repeated - shot on 35mm.</p>
+                <p>No moment ever repeats - shot on 35mm.</p>
               </div>
               
               {/* Location note */}

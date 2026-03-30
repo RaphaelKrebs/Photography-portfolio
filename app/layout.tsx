@@ -8,10 +8,16 @@ import ProtectImages from '@/components/ProtectImages'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Raphael Krebs - Photography',
-  description: 'Analog photography portfolio',
+  title: 'Raphael Krebs – Photography',
+  description: 'Photography by Raphael Krebs – urban, analog-inspired imagery capturing light, structure and atmosphere.',
   icons: {
     icon: '/favicon.ico',
+  },
+  openGraph: {
+    title: 'Raphael Krebs – Photography',
+    description: 'Photography by Raphael Krebs – urban, analog-inspired imagery capturing light, structure and atmosphere.',
+    images: ['/images/02/Cover/LA7.webp'],
+    type: 'website',
   },
 }
 

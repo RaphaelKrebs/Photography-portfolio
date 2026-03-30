@@ -7,6 +7,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-black pt-24 pb-16">
+      <h1 className="sr-only">Raphael Krebs</h1>
       <div className="w-full px-2 sm:px-12 md:px-24 lg:px-32 xl:px-48 2xl:px-64">
         <div className="max-w-[1400px] mx-auto">
           {/* Desktop: 3 columns */}
@@ -27,7 +28,7 @@ export default function Home() {
                       }`}>
                         <FadeImage
                           src={project.coverImage}
-                          alt=""
+                          alt={`${project.title} photography by Raphael Krebs`}
                           fill
                           className="object-cover transition-all duration-500 group-hover:scale-[1.02] group-hover:brightness-110"
                           sizes="(max-width: 1024px) 50vw, 33vw"
@@ -57,7 +58,7 @@ export default function Home() {
                       }`}>
                         <FadeImage
                           src={project.coverImage}
-                          alt=""
+                          alt={`${project.title} photography by Raphael Krebs`}
                           fill
                           className="object-cover transition-all duration-500 group-hover:scale-[1.02] group-hover:brightness-110"
                           sizes="50vw"
