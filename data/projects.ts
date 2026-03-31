@@ -2,12 +2,14 @@
 export interface ProjectImage {
   url: string
   orientation: 'portrait' | 'landscape'
+  alt?: string
 }
 
 export interface Project {
   slug: string
   title: string
   coverImage: string
+  coverImageAlt?: string
   orientation: 'portrait' | 'landscape'
   images: ProjectImage[]
 }

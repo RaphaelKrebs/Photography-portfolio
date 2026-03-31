@@ -13,7 +13,7 @@ export default function ParallelsPage() {
                   <div className="flex-1 relative aspect-[3/4]">
                     <FadeImage
                       src={entry.image1}
-                      alt={`${entry.title} photography by Raphael Krebs`}
+                      alt={entry.image1Alt || `${entry.title} photography by Raphael Krebs`}
                       fill
                       className="object-cover"
                       sizes="50vw"
@@ -23,7 +23,7 @@ export default function ParallelsPage() {
                   <div className="flex-1 relative aspect-[3/4]">
                     <FadeImage
                       src={entry.image2}
-                      alt={`${entry.title} photography by Raphael Krebs`}
+                      alt={entry.image2Alt || `${entry.title} photography by Raphael Krebs`}
                       fill
                       className="object-cover"
                       sizes="50vw"

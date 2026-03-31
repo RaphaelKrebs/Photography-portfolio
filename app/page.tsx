@@ -28,7 +28,7 @@ export default function Home() {
                       }`}>
                         <FadeImage
                           src={project.coverImage}
-                          alt={`${project.title} photography by Raphael Krebs`}
+                          alt={project.coverImageAlt || `${project.title} photography by Raphael Krebs`}
                           fill
                           className="object-cover transition-all duration-500 group-hover:scale-[1.02] group-hover:brightness-110"
                           sizes="(max-width: 1024px) 50vw, 33vw"
@@ -58,7 +58,7 @@ export default function Home() {
                       }`}>
                         <FadeImage
                           src={project.coverImage}
-                          alt={`${project.title} photography by Raphael Krebs`}
+                          alt={project.coverImageAlt || `${project.title} photography by Raphael Krebs`}
                           fill
                           className="object-cover transition-all duration-500 group-hover:scale-[1.02] group-hover:brightness-110"
                           sizes="50vw"

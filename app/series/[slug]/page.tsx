@@ -49,7 +49,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                     >
                       <FadeImage
                         src={image.url}
-                        alt={`${projectTitle} photography by Raphael Krebs`}
+                        alt={image.alt || `${projectTitle} photography by Raphael Krebs`}
                         fill
                         className="object-cover"
                         sizes="(max-width: 1024px) 50vw, 33vw"
@@ -76,7 +76,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                     >
                       <FadeImage
                         src={image.url}
-                        alt={`${projectTitle} photography by Raphael Krebs`}
+                        alt={image.alt || `${projectTitle} photography by Raphael Krebs`}
                         fill
                         className="object-cover"
                         sizes="50vw"

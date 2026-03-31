@@ -3,7 +3,9 @@ export interface Parallel {
   title: string
   description: string
   image1: string
+  image1Alt?: string
   image2: string
+  image2Alt?: string
 }
 
 export const parallels: Parallel[] = [

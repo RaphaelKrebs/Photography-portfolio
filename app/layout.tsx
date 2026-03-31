@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Raphael Krebs – Photography',
     description: 'Photography by Raphael Krebs – urban, analog-inspired imagery capturing light, structure and atmosphere.',
-    images: ['/images/02/Cover/LA7.webp'],
+    images: ['/images/Footer/RK_Footer.png'],
     type: 'website',
   },
 }
