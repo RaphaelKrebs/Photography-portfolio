@@ -27,18 +27,16 @@ export default function Navbar() {
   return (
     <nav className="fixed top-2 md:top-4 left-0 right-0 z-50 px-4 md:px-8">
       <div className="max-w-[1920px] mx-auto bg-white/10 backdrop-blur-lg rounded-full px-4 md:px-8 py-3 md:py-4 flex items-center justify-between shadow-lg">
-        {/* Logo - Desktop shows text, Mobile shows RK icon */}
+        {/* Logo - Shows RK icon on both mobile and desktop */}
         <Link 
           href="/" 
-          className="text-base font-bold tracking-wide text-foreground hover:opacity-70 transition-opacity uppercase"
+          className="hover:opacity-70 transition-opacity"
         >
-          <span className="hidden md:inline">Raphael Krebs</span>
           <Image 
             src="/images/Footer/RK_Footer.png" 
             alt="RK" 
             width={32} 
             height={32} 
-            className="md:hidden"
           />
         </Link>
         
