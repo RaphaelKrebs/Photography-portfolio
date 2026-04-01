@@ -19,7 +19,8 @@ export default function Home() {
                   .map((project, idx) => (
                     <Link
                       key={project.slug}
-                      href={`/series/${encodeURIComponent(project.slug)}`}
+                      href={`/series/${encodeURIComponent(project.linkTitle)}`}
+                      title={project.title}
                       className="block relative overflow-hidden group"
                     >
                       <div className={`relative w-full ${
@@ -50,7 +51,8 @@ export default function Home() {
                   .map((project, idx) => (
                     <Link
                       key={project.slug}
-                      href={`/series/${encodeURIComponent(project.slug)}`}
+                      href={`/series/${encodeURIComponent(project.linkTitle)}`}
+                      title={project.title}
                       className="block relative overflow-hidden group"
                     >
                       <div className={`relative w-full ${

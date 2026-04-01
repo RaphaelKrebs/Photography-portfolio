@@ -8,6 +8,7 @@ export interface ProjectImage {
 export interface Project {
   slug: string
   title: string
+  linkTitle: string
   coverImage: string
   coverImageAlt?: string
   orientation: 'portrait' | 'landscape'
@@ -18,6 +19,7 @@ export const projects: Project[] = [
   {
     slug: '01',
     title: 'Los Angeles — Lost Angles',
+    linkTitle: 'los-angeles',
     coverImage: '/images/02/Cover/LA7.webp',
     orientation: 'portrait',
     images: [
@@ -32,6 +34,7 @@ export const projects: Project[] = [
   {
     slug: '07',
     title: 'Madeira - Drip of Paradise',
+    linkTitle: 'madeira',
     coverImage: '/images/07/Cover/MAD01.webp',
     orientation: 'portrait',
     images: [
@@ -48,6 +51,7 @@ export const projects: Project[] = [
   {
     slug: '04',
     title: 'Munich - Shades of Bavaria',
+    linkTitle: 'munich-black-white',
     coverImage: '/images/04/Cover/BWMUE11.webp',
     orientation: 'portrait',
     images: [
@@ -65,6 +69,7 @@ export const projects: Project[] = [
   {
     slug: '05',
     title: 'Munich - Golden Summer',
+    linkTitle: 'munich-color',
     coverImage: '/images/05/Cover/MUESO10.webp',
     orientation: 'landscape',
     images: [
@@ -89,6 +94,7 @@ export const projects: Project[] = [
   {
     slug: '06',
     title: 'Alps - Silence & Stone',
+    linkTitle: 'alps',
     coverImage: '/images/06/Cover/ALPSA01.webp',
     orientation: 'portrait',
     images: [
@@ -100,6 +106,7 @@ export const projects: Project[] = [
     slug: '02',
     title: 'California - Chasing Magic Lights',
     coverImage: '/images/01/Cover/CA1.webp',
+    linkTitle: 'california',
     orientation: 'portrait',
     images: [
       { url: '/images/01/Project/CA2.webp', orientation: 'portrait' },
@@ -116,6 +123,7 @@ export const projects: Project[] = [
   {
     slug: '09',
     title: 'China - Between Tradition & Tomorrow',
+    linkTitle: 'china',
     coverImage: '/images/09/Cover/CHI01.webp',
     orientation: 'portrait',
     images: [
@@ -135,6 +143,7 @@ export const projects: Project[] = [
   {
     slug: '10',
     title: 'Vietnam - Midnight Streets',
+    linkTitle: 'vietnam-night',
     coverImage: '/images/10/Cover/VIETN1.webp',
     orientation: 'portrait',
     images: [
@@ -154,6 +163,7 @@ export const projects: Project[] = [
   {
     slug: '11',
     title: 'Hong Kong - City of Layers',
+    linkTitle: 'hong-kong',
     coverImage: '/images/11/Cover/HK1.webp',
     orientation: 'portrait',
     images: [
@@ -169,6 +179,7 @@ export const projects: Project[] = [
   {
     slug: '12',
     title: 'North Carolina - Infinite Horizons',
+    linkTitle: 'north-carolina',
     coverImage: '/images/12/Cover/NC1.webp',
     orientation: 'portrait',
     images: [
@@ -179,6 +190,7 @@ export const projects: Project[] = [
   {
     slug: '13',
     title: 'Alps - Life',
+    linkTitle: 'alps-life',
     coverImage: '/images/13/Cover/AL1.webp',
     orientation: 'portrait',
     images: [
@@ -192,6 +204,7 @@ export const projects: Project[] = [
   {
     slug: '14',
     title: 'Munich - Frozen in Time',
+    linkTitle: 'munich-winter',
     coverImage: '/images/14/Cover/MUEWI1.webp',
     orientation: 'landscape',
     images: [
@@ -202,6 +215,7 @@ export const projects: Project[] = [
   {
     slug: '15',
     title: 'Yosemite - Scale of Silence',
+    linkTitle: 'yosemite',
     coverImage: '/images/15/Cover/YON04.webp',
     orientation: 'landscape',
     images: [
@@ -216,6 +230,7 @@ export const projects: Project[] = [
   {
     slug: '16',
     title: 'Art - Shapes',
+    linkTitle: 'art',
     coverImage: '/images/16/Cover/ART01.webp',
     orientation: 'portrait',
     images: [
@@ -227,6 +242,7 @@ export const projects: Project[] = [
   {
     slug: '17',
     title: 'Rome - Layers of History',
+    linkTitle: 'rome',
     coverImage: '/images/17/Cover/ROM09.webp',
     orientation: 'portrait',
     images: [
@@ -249,6 +265,7 @@ export const projects: Project[] = [
   {
     slug: '18',
     title: 'Vietnam - Rythm of Life',
+    linkTitle: 'vietnam-day',
     coverImage: '/images/18/Cover/VIET2.webp',
     orientation: 'portrait',
     images: [

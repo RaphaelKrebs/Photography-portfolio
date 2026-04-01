@@ -10,14 +10,14 @@ interface ProjectPageProps {
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
-    slug: encodeURIComponent(project.slug),
+    slug: encodeURIComponent(project.linkTitle),
   }))
 }
 
 export default function ProjectPage({ params }: ProjectPageProps) {
   // Decode the slug to handle spaces and special characters
   const decodedSlug = decodeURIComponent(params.slug)
-  const project = projects.find((p) => p.slug === decodedSlug)
+  const project = projects.find((p) => p.linkTitle === decodedSlug)
 
   if (!project) {
     notFound()
