@@ -290,7 +290,7 @@ export const projects: Project[] = [
       { url: '/images/17/Project/ROM11.webp', orientation: 'portrait', alt: 'Fence mirroring in water' },
       { url: '/images/17/Project/ROM12.webp', orientation: 'portrait', alt: 'Tree in front of old building' },
       { url: '/images/17/Project/ROM13.webp', orientation: 'portrait', alt: 'Buildings through green trees' },
-      { url: '/images/17/Project/ROM14.webp', orientation: 'portrait', alt: 'Vatican inside gold Dome' },
+      { url: '/images/17/Project/ROM14.webp', orientation: 'portrait', alt: 'Vatican inside gold dome' },
     ]
   },
   {
