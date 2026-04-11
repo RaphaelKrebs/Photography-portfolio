@@ -17,33 +17,37 @@ export default function ContactPage() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Create mailto link with form data
-    const subject = encodeURIComponent(`Contact from ${formData.firstName} ${formData.lastName}`)
-    const body = encodeURIComponent(
-      `Name: ${formData.firstName} ${formData.lastName}\n` +
-      `Email: ${formData.email}\n` +
-      `Phone: ${formData.phone || 'Not provided'}\n\n` +
-      `Message:\n${formData.message}`
-    )
-    
-    // Open mailto link
-    window.location.href = `mailto:hello@raphaelkrebs.com?subject=${subject}&body=${body}`
-    
-    // Show success message
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setIsSubmitted(true)
-      // Reset form
-      setFormData({
-        firstName: '',
-        lastName: '',
-        phone: '',
-        email: '',
-        message: '',
+    try {
+      // Send email via API
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       })
-      // Hide success message after 5 seconds
-      setTimeout(() => setIsSubmitted(false), 5000)
-    }, 500)
+
+      if (response.ok) {
+        setIsSubmitted(true)
+        // Reset form
+        setFormData({
+          firstName: '',
+          lastName: '',
+          phone: '',
+          email: '',
+          message: '',
+        })
+        // Hide success message after 5 seconds
+        setTimeout(() => setIsSubmitted(false), 5000)
+      } else {
+        alert('Failed to send message. Please try again.')
+      }
+    } catch (error) {
+      console.error('Error sending email:', error)
+      alert('Failed to send message. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -156,7 +160,7 @@ export default function ContactPage() {
               {isSubmitted && (
                 <div className="bg-green-500/10 border border-green-500/30 rounded px-6 py-4 text-center">
                   <p className="text-sm font-light text-green-500">
-                    ✓ Message sent successfully! Your email client should open shortly.
+                    ✓ Message sent successfully! We'll get back to you soon.
                   </p>
                 </div>
               )}
