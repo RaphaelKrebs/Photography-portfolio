@@ -7,7 +7,18 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-black pt-24 pb-16">
-      <h1 className="sr-only">Raphael Krebs</h1>
+      {/* SEO Content - Hidden but crawlable */}
+      <div className="sr-only">
+        <h1>Raphael Krebs - Analog Photographer</h1>
+        <h2>35mm Film Photography Portfolio</h2>
+        <p>Raphael Krebs is an analog photographer specializing in 35mm film photography. Based in Rheda-Wiedenbrück, München (Munich), Düsseldorf, and Bochum, Germany. 
+        Professional photographer capturing urban landscapes, street photography, and travel photography on analog film. 
+        Studied at Hochschule Bochum and Universität Düsseldorf. Currently working as SAP Solution Advisor while pursuing photography passion.
+        Portfolio includes photography series from Los Angeles, California, San Francisco, Madeira, Munich, Alps, China, Vietnam, Hong Kong, North Carolina, Rome, and Yosemite.
+        Analog photography, film photography, 35mm photography, street photography, urban photography, travel photography, landscape photography.
+        Contact: hello@raphaelkrebs.com | LinkedIn: https://www.linkedin.com/in/raphael-krebs-4383a6201/</p>
+      </div>
+      
       <div className="w-full px-2 sm:px-12 md:px-24 lg:px-32 xl:px-48 2xl:px-64">
         <div className="max-w-[1400px] mx-auto">
           {/* Desktop: 3 columns */}
