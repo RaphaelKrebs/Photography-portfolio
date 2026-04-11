@@ -51,6 +51,30 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Easter Egg - Hidden message in source code */}
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            console.log('%c                                                                ', 'font-size: 1px;');
+            console.log('%c╔═══════════════════════════════════════════════════════════════╗', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c║                                                               ║', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c║   "The people who are crazy enough to think they can         ║', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c║    change the world are the ones who do."                    ║', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c║                                                               ║', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c║                                        - Steve Jobs           ║', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c║                                                               ║', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c║   Every frame captured on 35mm film tells a story.           ║', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c║   No moment ever repeats.                                    ║', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c║                                                               ║', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c║   - Raphael Krebs                                            ║', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c║   Analog Photographer                                        ║', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c║   hello@raphaelkrebs.com                                     ║', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c║                                                               ║', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c╚═══════════════════════════════════════════════════════════════╝', 'color: #fff; font-family: monospace; font-size: 12px;');
+            console.log('%c                                                                ', 'font-size: 1px;');
+          `
+        }} />
+      </head>
       <body className={inter.className}>
         <ProtectImages />
         <Navbar />
