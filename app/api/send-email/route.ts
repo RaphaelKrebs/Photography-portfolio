@@ -14,6 +14,9 @@ export async function POST(request: Request) {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASSWORD,
       },
+      tls: {
+        rejectUnauthorized: false // Accept self-signed certificates
+      }
     })
 
     // Email content
